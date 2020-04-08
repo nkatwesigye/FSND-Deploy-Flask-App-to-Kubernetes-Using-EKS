@@ -33,7 +33,7 @@ Parameters:
   GitHubToken:
     Type: String
     NoEcho: true
-    Description: GitHub API token - see https://github.com/blog/1509-personal-api-tokens
+    Description: GitHub API token - see https:/github.com/blog/1509-personal-api-tokens
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub personal access token
@@ -48,7 +48,7 @@ Parameters:
 
   CodeBuildDockerImage:
     Type: String
-    Default: aws/codebuild/docker:17.09.0
+    Default: aws/codebuild/standard:2.0
     Description: Default AWS CodeBuild Docker optimized image
     MinLength: 3
     MaxLength: 100
@@ -368,3 +368,4 @@ Resources:
                 - Name: BuildOutput
               RunOrder: 1
     DependsOn: CodeBuildProject
+
