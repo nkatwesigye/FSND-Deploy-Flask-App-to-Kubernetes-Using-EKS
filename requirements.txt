@@ -1,4 +1,5 @@
 pyjwt
+typing
 flask
 gunicorn
 pytest
